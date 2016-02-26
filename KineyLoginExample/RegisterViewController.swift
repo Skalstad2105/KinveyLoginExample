@@ -27,6 +27,10 @@ class RegisterViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
     @IBAction func backPressed(sender: AnyObject) {
         
@@ -46,7 +50,9 @@ class RegisterViewController: UIViewController {
             if errorOrNil == nil{
                 
                 //Signup was successful!
-                print("Register was successful")
+                let viewController:UITabBarController = UIStoryboard(name: "Main", bundle: nil).instantiateViewControllerWithIdentifier("main") as! UITabBarController
+                
+                self.presentViewController(viewController, animated: true, completion: nil)
                 
             }
             else
@@ -59,11 +65,6 @@ class RegisterViewController: UIViewController {
             
         }
         
-        
-        
-        
     }
-    
-    
     
 }
