@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D7E668001C80BCA6006105EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E667FF1C80BCA6006105EF /* AppDelegate.swift */; };
-		D7E668021C80BCA6006105EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E668011C80BCA6006105EF /* ViewController.swift */; };
 		D7E668051C80BCA6006105EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E668031C80BCA6006105EF /* Main.storyboard */; };
 		D7E668071C80BCA6006105EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7E668061C80BCA6006105EF /* Assets.xcassets */; };
 		D7E6680A1C80BCA6006105EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7E668081C80BCA6006105EF /* LaunchScreen.storyboard */; };
@@ -24,12 +23,14 @@
 		D7E668261C80BEEB006105EF /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E668251C80BEEB006105EF /* WebKit.framework */; };
 		D7E668281C80BF01006105EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E668271C80BF01006105EF /* Foundation.framework */; };
 		D7E6682A1C80BF0B006105EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7E668291C80BF0B006105EF /* UIKit.framework */; };
+		D7E6682E1C80CF81006105EF /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6682D1C80CF81006105EF /* RegisterViewController.swift */; };
+		D7E668301C80CF9D006105EF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E6682F1C80CF9D006105EF /* LoginViewController.swift */; };
+		D7E668321C80CFD4006105EF /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E668311C80CFD4006105EF /* ForgetPasswordViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D7E667FC1C80BCA6006105EF /* KineyLoginExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KineyLoginExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7E667FF1C80BCA6006105EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7E668011C80BCA6006105EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7E668041C80BCA6006105EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7E668061C80BCA6006105EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7E668091C80BCA6006105EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		D7E668271C80BF01006105EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7E668291C80BF0B006105EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7E6682C1C80BFDD006105EF /* KinveyLoginExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KinveyLoginExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		D7E6682D1C80CF81006105EF /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D7E6682F1C80CF9D006105EF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		D7E668311C80CFD4006105EF /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				D7E667FF1C80BCA6006105EF /* AppDelegate.swift */,
-				D7E6682C1C80BFDD006105EF /* KinveyLoginExample-Bridging-Header.h */,
-				D7E668011C80BCA6006105EF /* ViewController.swift */,
+				D7E668331C80CFED006105EF /* Login Kinvey */,
 				D7E668031C80BCA6006105EF /* Main.storyboard */,
 				D7E668061C80BCA6006105EF /* Assets.xcassets */,
 				D7E668081C80BCA6006105EF /* LaunchScreen.storyboard */,
@@ -120,6 +123,17 @@
 				D7E668151C80BD69006105EF /* Accounts.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D7E668331C80CFED006105EF /* Login Kinvey */ = {
+			isa = PBXGroup;
+			children = (
+				D7E6682F1C80CF9D006105EF /* LoginViewController.swift */,
+				D7E668311C80CFD4006105EF /* ForgetPasswordViewController.swift */,
+				D7E6682D1C80CF81006105EF /* RegisterViewController.swift */,
+				D7E6682C1C80BFDD006105EF /* KinveyLoginExample-Bridging-Header.h */,
+			);
+			name = "Login Kinvey";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +207,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7E668021C80BCA6006105EF /* ViewController.swift in Sources */,
+				D7E668301C80CF9D006105EF /* LoginViewController.swift in Sources */,
+				D7E6682E1C80CF81006105EF /* RegisterViewController.swift in Sources */,
+				D7E668321C80CFD4006105EF /* ForgetPasswordViewController.swift in Sources */,
 				D7E668001C80BCA6006105EF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
